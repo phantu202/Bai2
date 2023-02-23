@@ -1,0 +1,16 @@
+package test;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String num1 = "10";
+		int num2 = Integer.parseInt(num1); // ep kieu string sang so
+		
+		float num3 = 4.5f;
+		String num4String = String.valueOf(num3);
+		
+		System.out.println(num4String);
+	}
+
+}
