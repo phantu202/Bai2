@@ -1,0 +1,13 @@
+package lesson_3;
+
+public class BaiTap1 {
+	//Tạo 1 mảng số nguyên, tìm số nhỏ nhất và lớn nhất trong mảng đó
+	public static void main(String[] args) {
+		int [] arr = {23,54,2,104,5,54,89};
+		for(int i : arr) {
+			System.out.println(i);
+		}
+
+	}
+
+}

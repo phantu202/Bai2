@@ -1,0 +1,20 @@
+package lesson_3;
+
+import java.security.PublicKey;
+import java.util.Scanner;
+
+public class BaiTap1 {
+	//Viết chương trình nhập vào n số nguyên và thực xuất các giá trị của mảng,tìm min,max
+	public static void main(String[] args) {
+		int n;
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Mời bạn nhập số phần tử cho mảng: ");
+		do {
+			n = scanner.nextInt();
+		} while (n < 0);
+		
+		
+		
+		
+	}
+}

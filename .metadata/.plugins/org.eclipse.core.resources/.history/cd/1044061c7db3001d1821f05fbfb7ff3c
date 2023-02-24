@@ -1,0 +1,19 @@
+package lesson_3;
+
+public class BaiTap1 {
+	//Tạo 1 mảng số nguyên, tìm số lớn nhất trong mảng đó
+	public static void main(String[] args) {
+		int [] arr = {23,54,2,104,5,54,89};
+		int min = arr[0];
+		System.out.println(arr.length);
+		for (int i = 0; i <= arr.length; i++) {
+			if (min > arr[i]) {
+				min = arr[i];
+			}
+		}
+		System.out.println(min);
+		
+
+	}
+
+}

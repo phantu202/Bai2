@@ -1,0 +1,15 @@
+package lesson_3;
+
+public class BaiTap1 {
+	//Tạo 1 mảng số nguyên, tìm số lớn nhất trong mảng đó
+	public static void main(String[] args) {
+		int [] arr = {23,54,2,34,5,54,89};
+		int max = 0;
+		System.out.println(arr.length);
+		
+		
+		
+
+	}
+
+}

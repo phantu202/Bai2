@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author macbookpro
- *
- */
-module HocJava {
-}
