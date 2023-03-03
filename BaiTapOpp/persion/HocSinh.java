@@ -72,6 +72,4 @@ public class HocSinh {
 		System.out.println("Xếp hạng: " + xepHang);
 	}
 	
-	
-	
 }
