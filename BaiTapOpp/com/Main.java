@@ -35,9 +35,7 @@ public class Main {
 		double diemCK = scanner.nextDouble();
 		double diemTB = studentA.tinhDiemTB(input, diem15Phut, diem1Tiet, diemCK);
 		System.out.println("Điểm trung bình " + tenMon + " là: " + diemTB);
-		
-		
-		
+
 	}
 
 }

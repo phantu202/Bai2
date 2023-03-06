@@ -7,9 +7,9 @@ public class Student {
 	private double literatureScore;
 	private double mathScore;
 	private double englishScore;
-	
+
 	public Student() {
-		
+
 	}
 
 	public Student(String fullName, String classRoom, String group) {
@@ -18,8 +18,6 @@ public class Student {
 		this.group = group;
 	}
 
-	
-	
 	public String getFullName() {
 		return fullName;
 	}
@@ -69,29 +67,28 @@ public class Student {
 	}
 
 	public String toString() {
-		return "Student [fullName = " + fullName + ", classRoom = " + classRoom + ", group = " + group +  "]";
+		return "Student [fullName = " + fullName + ", classRoom = " + classRoom + ", group = " + group + "]";
 	}
-	
+
 	public void getInfo() {
 		System.out.println(toString());
 	}
-	
-	
-	public double averageScore (double scoreFactor1, double scoreFactor2, double scoreFactor3) {
-		double averageScore = (scoreFactor1 + scoreFactor2*2 + scoreFactor3 * 3)/6;
+
+	public double averageScore(double scoreFactor1, double scoreFactor2, double scoreFactor3) {
+		double averageScore = (scoreFactor1 + scoreFactor2 * 2 + scoreFactor3 * 3) / 6;
 		return averageScore;
 	}
-	
-	public void enterSubjectScore (int subject, double scoreFactor1, double scoreFactor2, double scoreFactor3) {
+
+	public void enterSubjectScore(int subject, double scoreFactor1, double scoreFactor2, double scoreFactor3) {
 		double averageScore = averageScore(scoreFactor1, scoreFactor2, scoreFactor3);
 		switch (subject) {
-		case 1: 
+		case 1:
 			this.literatureScore = averageScore;
 			break;
 		case 2:
-			this.mathScore  = averageScore;
+			this.mathScore = averageScore;
 			break;
-		case 3: 
+		case 3:
 			this.englishScore = averageScore;
 			break;
 		default:
@@ -99,13 +96,13 @@ public class Student {
 			return;
 		}
 	}
-	
-	public double finalAverageScore (double literatureScore, double mathScore, double englishScore) {
-		double finalAverageScore = (literatureScore + mathScore + englishScore)/3;
+
+	public double finalAverageScore(double literatureScore, double mathScore, double englishScore) {
+		double finalAverageScore = (literatureScore + mathScore + englishScore) / 3;
 		return finalAverageScore;
 	}
-	
-	public String rating (double finalAverageScore) {
+
+	public String rating(double finalAverageScore) {
 		String rating;
 		if (finalAverageScore < 5) {
 			rating = "Trung bình";
@@ -116,7 +113,7 @@ public class Student {
 		}
 		return rating;
 	}
-	
+
 	public void finalStudentSummaries() {
 		double finalAverageScore = finalAverageScore(literatureScore, mathScore, englishScore);
 		String rating = rating(finalAverageScore);
@@ -127,7 +124,5 @@ public class Student {
 		System.out.println("Điểm trung bình cả năm: " + finalAverageScore);
 		System.out.println("Xếp hạng: " + rating);
 	}
-	
-	
-	
+
 }

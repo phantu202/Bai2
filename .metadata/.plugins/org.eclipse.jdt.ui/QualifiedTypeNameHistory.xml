@@ -19,9 +19,11 @@
     <fullyQualifiedTypeName name="javax.management.remote.SubjectDelegationPermission"/>
     <fullyQualifiedTypeName name="com.Circle"/>
     <fullyQualifiedTypeName name="com.Geometric"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.Student"/>
     <fullyQualifiedTypeName name="javax.print.DocFlavor.INPUT_STREAM"/>
+    <fullyQualifiedTypeName name="com.Word"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.Method"/>
 </qualifiedTypeNameHistroy>
