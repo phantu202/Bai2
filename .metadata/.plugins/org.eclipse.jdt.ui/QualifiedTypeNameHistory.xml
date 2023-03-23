@@ -22,8 +22,22 @@
     <fullyQualifiedTypeName name="com.Student"/>
     <fullyQualifiedTypeName name="javax.print.DocFlavor.INPUT_STREAM"/>
     <fullyQualifiedTypeName name="com.Word"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.Method"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="com.Vietnamese"/>
+    <fullyQualifiedTypeName name="com.Person"/>
+    <fullyQualifiedTypeName name="triutuong.com.Person"/>
+    <fullyQualifiedTypeName name="triutuong.com.ChucNang"/>
+    <fullyQualifiedTypeName name="triutuong.com.ChucNang2"/>
+    <fullyQualifiedTypeName name="sinhvien.com.model.User"/>
+    <fullyQualifiedTypeName name="java.util.ResourceBundle.Control"/>
+    <fullyQualifiedTypeName name="sinhvien.com.controller.Controller"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="com.Method"/>
+    <fullyQualifiedTypeName name="javax.lang.model.element.NestingKind"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="sinhvien.com.service.StudentService"/>
+    <fullyQualifiedTypeName name="sinhvien.com.model.Student"/>
+    <fullyQualifiedTypeName name="sinhvien.com.impl.StudentImpl"/>
 </qualifiedTypeNameHistroy>
