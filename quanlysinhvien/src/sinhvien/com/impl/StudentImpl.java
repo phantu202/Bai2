@@ -30,13 +30,21 @@ public class StudentImpl implements StudentService {
 
 	@Override
 	public void update(Student student) {
+		boolean condition = true;
 		for (int i = 0; i < students.size(); i++) {
 			if (student.getMsv().equals(students.get(i).getMsv())) {
-				students.add(i, student);
+				students.get(i).setAge(student.getAge());
+				students.get(i).setClassId(student.getClassId());
+				students.get(i).seteId(student.geteId());
+				students.get(i).setName(student.getName());
+				students.get(i).setTenKhoa(student.getTenKhoa());
+				condition = false;
 				break;
 			}
 		}
+		if(condition) {
 		System.out.println("Không tồn tại mã sinh viên này");
+		}
 	}
 
 	@Override

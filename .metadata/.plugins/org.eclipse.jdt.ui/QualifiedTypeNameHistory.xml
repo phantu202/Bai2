@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
-    <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
-    <fullyQualifiedTypeName name="java.util.function.BiConsumer"/>
-    <fullyQualifiedTypeName name="java.security.PublicKey"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="MyClass.Persion"/>
     <fullyQualifiedTypeName name="new1.MyClass"/>
@@ -12,7 +8,6 @@
     <fullyQualifiedTypeName name="male.Male"/>
     <fullyQualifiedTypeName name="female.Student"/>
     <fullyQualifiedTypeName name="female.FeMale"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.nio.file.attribute.FileOwnerAttributeView"/>
     <fullyQualifiedTypeName name="persion.HocSinh"/>
     <fullyQualifiedTypeName name="java.lang.Double"/>
@@ -23,7 +18,6 @@
     <fullyQualifiedTypeName name="javax.print.DocFlavor.INPUT_STREAM"/>
     <fullyQualifiedTypeName name="com.Word"/>
     <fullyQualifiedTypeName name="com.Method"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="com.Vietnamese"/>
     <fullyQualifiedTypeName name="com.Person"/>
     <fullyQualifiedTypeName name="triutuong.com.Person"/>
@@ -32,12 +26,38 @@
     <fullyQualifiedTypeName name="sinhvien.com.model.User"/>
     <fullyQualifiedTypeName name="java.util.ResourceBundle.Control"/>
     <fullyQualifiedTypeName name="sinhvien.com.controller.Controller"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="javax.lang.model.element.NestingKind"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="sinhvien.com.service.StudentService"/>
     <fullyQualifiedTypeName name="sinhvien.com.model.Student"/>
     <fullyQualifiedTypeName name="sinhvien.com.impl.StudentImpl"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="exam.User"/>
+    <fullyQualifiedTypeName name="javax.management.loading.PrivateClassLoader"/>
+    <fullyQualifiedTypeName name="com.model.Phone"/>
+    <fullyQualifiedTypeName name="com.service.PhoneSevice"/>
+    <fullyQualifiedTypeName name="com.controller.Controller"/>
+    <fullyQualifiedTypeName name="com.model.SmartPhone"/>
+    <fullyQualifiedTypeName name="qlsinhviengiangvien.service.TeacherService"/>
+    <fullyQualifiedTypeName name="qlsinhviengiangvien.controller.Controller"/>
+    <fullyQualifiedTypeName name="qlsinhviengiangvien.service.StudentService"/>
+    <fullyQualifiedTypeName name="qlsinhviengiangvien.model.Student"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="qlsinhviengiangvien.model.Teacher"/>
+    <fullyQualifiedTypeName name="model.Custom"/>
+    <fullyQualifiedTypeName name="java.lang.ModuleLayer.Controller"/>
+    <fullyQualifiedTypeName name="model.Room"/>
+    <fullyQualifiedTypeName name="javax.xml.transform.Templates"/>
+    <fullyQualifiedTypeName name="service.RoomService"/>
+    <fullyQualifiedTypeName name="service.CustomService"/>
+    <fullyQualifiedTypeName name="java.security.PublicKey"/>
+    <fullyQualifiedTypeName name="model.product"/>
+    <fullyQualifiedTypeName name="service.ProduceService"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="controller.Controller"/>
+    <fullyQualifiedTypeName name="sevice.ProductService"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="model.Product"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>
