@@ -13,8 +13,9 @@ public class App {
 		Scanner scanner = new Scanner(System.in);
 		RoomService rService = new RoomService();
 		CustomService cService = new CustomService();
-		rService.start();
+		
 		cService.start();
+		
 		boolean condition = false;
 		do {
 			System.out.println("1. Để thao tác dữ liệu khách hàng");

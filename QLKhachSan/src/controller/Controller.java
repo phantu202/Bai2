@@ -11,16 +11,32 @@ public class Controller {
 	CustomService cService = new CustomService();
 	Scanner scanner = new Scanner(System.in);
 	public void createCustom() {
-		System.out.println("Nhập ID");
-		int idCustom = Integer.parseInt(scanner.nextLine());
-		System.out.println("Nhập tên khách hàng");
-		String customName = scanner.nextLine();
-		System.out.println("Nhập giới tính khách hàng");
-		String customSex = scanner.nextLine();
-		System.out.println("Nhập điện thoại khách hàng");
-		String customFone = scanner.nextLine();
-		Custom custom = new Custom(idCustom, customName, customSex, customFone);
-		cService.createCustom(custom);
+		try {
+			System.out.println("Nhập ID");
+			int idCustom = Integer.parseInt(scanner.nextLine());
+			System.out.println("Nhập tên khách hàng");
+			String customName = scanner.nextLine();
+			System.out.println("Nhập giới tính khách hàng");
+			String customSex = scanner.nextLine();
+			System.out.println("Nhập điện thoại khách hàng");
+			String customFone = scanner.nextLine();
+			Custom custom = new Custom(idCustom, customName, customSex, customFone);
+			cService.createCustom(custom);
+		} catch (Exception e) {
+			System.out.println("Lỗi");
+		}finally {
+			System.out.println("Hẹn gặp lại");
+		}
+//		System.out.println("Nhập ID");
+//		int idCustom = Integer.parseInt(scanner.nextLine());
+//		System.out.println("Nhập tên khách hàng");
+//		String customName = scanner.nextLine();
+//		System.out.println("Nhập giới tính khách hàng");
+//		String customSex = scanner.nextLine();
+//		System.out.println("Nhập điện thoại khách hàng");
+//		String customFone = scanner.nextLine();
+//		Custom custom = new Custom(idCustom, customName, customSex, customFone);
+//		cService.createCustom(custom);
 		
 	}
 	public void readAllCustom() {

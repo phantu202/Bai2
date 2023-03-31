@@ -1,6 +1,8 @@
 package model;
 
-public class Room {
+import java.io.Serializable;
+
+public class Room implements Serializable{
 	private int numbRoom;
 	private String kindOfRoomString;
 	private boolean roomStatus;

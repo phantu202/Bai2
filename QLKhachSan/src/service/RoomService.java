@@ -2,23 +2,29 @@ package service;
 
 import java.util.ArrayList;
 
+import file.MyFile;
 import model.Room;
 
 public class RoomService {
-	public static ArrayList<Room> listRooms;
+	public static ArrayList<Room> listRooms= new ArrayList<>();
+	private static final String fileName = "roomxjk.txt";
+	MyFile myFile = new MyFile();
+	
+	
 
-	public void start() {
-		if (listRooms == null) {
-			listRooms = new ArrayList<>();
-			listRooms.add(new Room(1, "Đôi", false, 0));
-			listRooms.add(new Room(2, "Đơn", true, 1));
-			listRooms.add(new Room(3, "King", false, 0));
-			listRooms.add(new Room(4, "Queen", true, 2));
+//	public void start() {
+//		if (listRooms == null) {
+//			listRooms = new ArrayList<>();
+//			listRooms.add(new Room(1, "Đôi", false, 0));
+//			listRooms.add(new Room(2, "Đơn", true, 1));
+//			listRooms.add(new Room(3, "King", false, 0));
+//			listRooms.add(new Room(4, "Queen", true, 2));
+//
+//		}
+//	}
 
-		}
-	}
-
-	public void createRoom(Room room) {
+	public void createRoom(Room room){
+		
 		boolean cond = true;
 		for (Room room1 : listRooms) {
 			if (room1.getNumbRoom() == room.getNumbRoom()) {
@@ -29,17 +35,20 @@ public class RoomService {
 		}
 		if (cond) {
 			listRooms.add(room);
+			myFile.output(listRooms, fileName);
 		}
 	}
 
 	public void readAllRoom() {
-		start();
+		
+		listRooms =  (ArrayList<Room>) myFile.docFile(fileName);
 		for (Room room : listRooms) {
 			System.out.println(room.toString());
 		}
 	}
 
 	public void updateRoom(Room room) {
+		readAllRoom();
 		boolean cond = true;
 		for (Room room1 : listRooms) {
 			if (room1.getNumbRoom() == room.getNumbRoom()) {
@@ -62,6 +71,8 @@ public class RoomService {
 	}
 
 	public void deleteRoom(int numbRoom) {
+		readAllRoom();
+
 		boolean cond = true;
 		for (Room room : listRooms) {
 			if (room.getNumbRoom() == numbRoom) {
@@ -73,9 +84,11 @@ public class RoomService {
 		if (cond) {
 			System.out.println("Không tồn tại số phòng này");
 		}
+
 	}
 
 	public void findRoom(int numbRoom) {
+		readAllRoom();
 		for (Room room : listRooms) {
 			if (room.getNumbRoom() == numbRoom) {
 				System.out.println(room.toString());
@@ -84,6 +97,7 @@ public class RoomService {
 	}
 
 	public void bookRoom(int numbRoom, int tenantsID) {
+		readAllRoom();
 		boolean cond = true;
 		for (Room room : listRooms) {
 			if (room.getNumbRoom() == numbRoom) {
@@ -104,6 +118,7 @@ public class RoomService {
 	}
 
 	public void checkRoom(int numbRoom) {
+		readAllRoom();
 		boolean cond = true;
 		for (Room room : listRooms) {
 			if (room.getNumbRoom() == numbRoom) {
@@ -124,6 +139,7 @@ public class RoomService {
 	}
 
 	public void findEmtyRoom() {
+		readAllRoom();
 		for (Room room : listRooms) {
 			if (room.getRoomStatus() == false) {
 				System.out.println(room.toString());
@@ -132,6 +148,7 @@ public class RoomService {
 	}
 
 	public void findRentedRoom() {
+		readAllRoom();
 		for (Room room : listRooms) {
 			if (room.getRoomStatus() == true) {
 				System.out.println(room.toString());
